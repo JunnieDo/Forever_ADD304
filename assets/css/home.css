@@ -64,3 +64,11 @@ button img {
 a:hover {
     background-color: #111;
 }
+
+.circle_bg {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+}
