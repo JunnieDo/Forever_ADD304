@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "pain-de-mie", sans-serif;
   margin: 0px;
 }
 ul {
@@ -8,9 +8,14 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #Logo {
@@ -19,32 +24,22 @@ ul {
   background-color: #333;
   margin: 0px;
   padding: 30px 30px 0px 30px;
-  font-size: 25px;
+  font-size: 350%;
+}
+
+#Logo a:hover {
+  color: #04AA6D;
 }
 
 li {
   border-radius: 15px;
-  margin: 20px;
+  margin: 10px;
   border: white 1px solid;
+  width: 15%;
 }
 
-li:first-child {
-  margin-left: 30px;
-  width: 20%;
-}
-
-li:last-child {
-  margin-right: 30px;
-  width: 20%;
-}
-
-li:nth-child(2),
-li:nth-child(3) {
-  width: 20%;
-}
-
-li:nth-child(2){
-  margin-right: 0px;
+li:nth-child(2) {
+  margin-right: 5%;
 }
 
 li a {
