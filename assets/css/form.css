@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px #333;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    width: 90%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form div{
+    width: 15%;
+}
+div * {
+    margin-bottom: 15px;
+}
