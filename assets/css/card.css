@@ -5,6 +5,7 @@
     overflow: hidden;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 .card-img {
@@ -47,4 +48,11 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
