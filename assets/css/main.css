@@ -90,7 +90,7 @@ h1 {
   background-color: #04AA6D;
 }
 
-#login-btn {
+.user-btn {
   margin-left: auto;
   margin-top: auto;
   margin-right: 3%;

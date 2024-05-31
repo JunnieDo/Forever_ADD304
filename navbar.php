@@ -2,8 +2,8 @@
     if (isset($_SESSION['login_email']) && $_SESSION['loggedIn'] && isset($_SESSION['loggedIn'])) {
         echo    "<div id=\"Logo\">
                     <a href=\"index.php\">Furever</a>
-                    <a href=\"Logout.php\" id=\"login-btn\">Log out</a>
-                    <a href=\"profile.php\" id=\"login-btn\">Profile</a>
+                    <a href=\"index.php?logout=1\" class=\"user-btn\">Log Out</a>
+                    <a href=\"profile.php\" class=\"user-btn\" style=\"margin-left: 10px;\"><i class=\"fa-regular fa-user\"></i></a>
                 </div>";
         echo    "<ul>";
         echo        "<li><a href=\"cat.php\"><i class=\"fa-solid fa-cat\"></i></a></li>";
@@ -13,7 +13,7 @@
     else {
         echo    "<div id=\"Logo\">
                     <a href=\"index.php\">Furever</a>
-                    <a href=\"Login.php\" id=\"login-btn\">Log in/Sign up</a>
+                    <a href=\"Login.php\" class=\"user-btn\">Log in/Sign up</a>
                 </div>";
         echo    "<ul>";
         echo        "<li><a href=\"cat.php\"><i class=\"fa-solid fa-cat\"></i></a></li>";
