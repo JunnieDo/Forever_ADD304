@@ -54,6 +54,9 @@ button {
     border: none;
     background-color: transparent;
     height: 90vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 button img {
@@ -63,12 +66,4 @@ button img {
 
 a:hover {
     background-color: #111;
-}
-
-.circle_bg {
-    z-index: -1;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100vh;
 }

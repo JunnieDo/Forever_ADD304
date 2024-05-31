@@ -1,7 +1,12 @@
 body {
-  font-family: "pain-de-mie", sans-serif;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+#Logo a:first-of-type {
+  font-family: "pain-de-mie", sans-serif;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -25,6 +30,7 @@ a {
   margin: 0px;
   padding: 30px 30px 0px 30px;
   font-size: 450%;
+  display: flex;
 }
 
 #Logo a:hover {
@@ -82,4 +88,14 @@ h1 {
 
 .rescue-btn:hover {
   background-color: #04AA6D;
+}
+
+#login-btn {
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 3%;
+  font-size: large;
+  border: solid 1px white;
+  border-radius: 15px;
+  padding: 10px;
 }

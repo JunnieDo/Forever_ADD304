@@ -6,14 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cfk5sas.css">
 </head>
+<style>
+    body {
+        background-image: url('assets/img/bg/CIRCLE_cut_BG.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+        background-size: 45%;
+    }
+</style>
 <body>
-    <div id="Logo"><a href="index.html">Furever</a></div>
-    <ul>
-        <li><a href="cat.php"><i class="fa-solid fa-cat"></i></a></li>
-        <li><a href="dog.php"><i class="fa-solid fa-dog"></i></a></li>
-    </ul>
+    <?php include 'navbar.php'; ?>
     <button id="popup-btn"><img src="assets/img/bg/Dog_n_cat_bg.png" alt="button"></button>
     
     <div id="popup-overlay" class="popup-overlay">
@@ -25,8 +29,6 @@
             </div>
         </div>
     </div>
-
-    <img src="assets/img/bg/circle_cut_bg.png" alt="" class="circle_bg">
 </body>
 <script src="https://kit.fontawesome.com/8115f5ec82.js" crossorigin="anonymous"></script>
 <script>

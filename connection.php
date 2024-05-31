@@ -1,5 +1,5 @@
 <?php
-    ini_set('display_errors', 0);
+    //ini_set('display_errors', 0);
     function checkConnectionDb(){
         try {
             $db_host = 'localhost';
@@ -21,7 +21,7 @@
             $error = date_default_timezone_set('America/Toronto') . " - " . date('m/d/Y h:i:s a', time()) . " - " . "Error: " . $con->error;
             error_log($error . "\n", 3, "error.log");
             // redirect user to error page
-            header("Location: index.html");
+            header("Location: index.php");
             exit;
         } 
         return $con;

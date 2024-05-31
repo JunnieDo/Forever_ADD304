@@ -12,12 +12,17 @@
     <link rel="stylesheet" href="assets/css/card.css">
     <link rel="stylesheet" href="https://use.typekit.net/cfk5sas.css">
 </head>
+<style>
+    body {
+        background-image: url('assets/img/bg/Cat_bg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left bottom;
+        background-size: 35%;
+    }
+</style>
 <body>
-    <div id="Logo"><a href="index.html">Furever</a></div>
-    <ul>
-        <li class="active"><a href="cat.php"><i class="fa-solid fa-cat"></i></a></li>
-        <li><a href="dog.php"><i class="fa-solid fa-dog"></i></a></li>
-    </ul>
+    <?php include 'navbar.php'; ?>
     <h1><i class="fa-solid fa-cat"></i> CAT</h1>
     <a class="rescue-btn" href="list_pet.php"><i class="fa-solid fa-shield-cat"></i></a>
     <div class="cat-list">

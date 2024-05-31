@@ -58,7 +58,7 @@
             <button type="submit">Submit</button>
         </div>      
     </form>
-    <a href="index.html" class="btn-primary" style="text-decoration: none;
+    <a href="index.php" class="btn-primary" style="text-decoration: none;
     color: white; background-color: #333; padding: 10px; margin: 20px; border-radius: 10px;">Back to home</a>
 </body>
 </html>
