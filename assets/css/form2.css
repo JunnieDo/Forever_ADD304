@@ -40,7 +40,7 @@ textarea {
 
 input[type=submit],
 .btn {
-    background-color: #04AA6D;
+    background-color: rgba(255, 164, 98, 1);
     color: white;
     padding: 10px 20px;
     margin: 8px 0;
@@ -78,5 +78,5 @@ a.btn:hover {
     text-decoration: underline;
 }
 .join-us:hover {
-    color: #04AA6D;
+    color: rgba(255, 164, 98, 1);
 }

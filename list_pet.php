@@ -7,6 +7,7 @@
         $petName = $_POST['pet-name'];
         $petAge = $_POST['pet-age'];
         $petDescription = $_POST['pet-description'];
+        $petFee = $_POST['pet-fee'];
 
         // Handle the uploaded file
         if (isset($_FILES['pet-img'])) {
@@ -15,9 +16,9 @@
             $petImage = null;
         }
 
-        $sql = "INSERT INTO pet_info (type, image, name, age, description) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO pet_info (type, image, name, age, description, fee) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sssis", $petType, $petImage, $petName, $petAge, $petDescription);
+        $stmt->bind_param("sssisd", $petType, $petImage, $petName, $petAge, $petDescription, $petFee);
 
         if ($stmt->execute()) {
             echo "<h2>New record created successfully</h2>";
@@ -43,6 +44,7 @@
             <p><label for="pet-img">Pet Image:</label></p>
             <p><label for="pet-name">Pet Name:</label></p>
             <p><label for="pet-age">Pet Age:</label></p>
+            <label for="pet-fee">Pet Support Fee:</label>
             <p><label for="pet-description">Pet Description:</label></p>
         </div>
         <div>
@@ -54,7 +56,9 @@
             <input type="file" name="pet-img" id="pet-img"><br>
             <input type="text" name="pet-name" id="pet-name"><br>
             <input type="number" name="pet-age" id="pet-age"><br>
+            <input type="number" name="pet-fee" id="pet-fee"><br>
             <textarea name="pet-description" id="pet-description" cols="30" rows="10"></textarea><br>
+
             <button type="submit">Submit</button>
         </div>      
     </form>

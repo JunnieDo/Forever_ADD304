@@ -12,7 +12,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(84, 90, 143, 1);
   align-items: center;
   display: flex;
   justify-content: flex-end;
@@ -25,8 +25,8 @@ a {
 
 #Logo {
   border: none;
-  color: white;
-  background-color: #333;
+  color: rgba(255, 242, 230, 1);
+  background-color: rgba(84, 90, 143, 1);
   margin: 0px;
   padding: 30px 30px 0px 30px;
   font-size: 450%;
@@ -34,7 +34,7 @@ a {
 }
 
 #Logo a:hover {
-  color: #04AA6D;
+  color: rgba(255, 164, 98, 1);
 }
 
 li {
@@ -58,11 +58,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
+  color: rgba(255, 164, 98, 1);
 }
 
 h1 {
@@ -87,7 +83,7 @@ h1 {
 }
 
 .rescue-btn:hover {
-  background-color: #04AA6D;
+  background-color: rgba(255, 164, 98, 1);
 }
 
 .user-btn {

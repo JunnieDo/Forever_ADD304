@@ -2,9 +2,9 @@
     //ini_set('display_errors', 0);
     function checkConnectionDb(){
         try {
-            $db_host = 'localhost';
+            $db_host = 'localhost:3305';
             $db_user = 'root';
-            $db_password = 'root';
+            $db_password = '';
             $db_db = 'Furever';
             
             $con = @new mysqli(

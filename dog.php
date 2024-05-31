@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include 'connection.php';
     $conn = checkConnectionDb();
 ?>
@@ -9,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/card.css">
     <link rel="stylesheet" href="https://use.typekit.net/cfk5sas.css">
 </head>
 <style>
