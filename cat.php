@@ -39,7 +39,7 @@
                         echo            "<h3 class='card-name'>" . $row['name'] . "</h3>";
                         echo            "<p class='card-age'>Cat Age: " . $row['age'] . " years</p>";
                         echo            "<p class='card-description'>" . $row['description'] . "</p>";
-                        echo            "<button class='card-btn'>Details</button>";
+                        echo            "<a href='support.php?pet_id=" . $row['id'] . "' class='card-btn'>Support</a>";
                         echo        "</div>";
                         echo    "</div>";
                         echo "</div>";
