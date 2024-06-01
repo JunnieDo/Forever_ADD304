@@ -137,6 +137,8 @@ input[type=submit]:hover {
             $stmt->bind_param("ssi", $userPhoneNum, $userMailBox, $userId);
             $stmt->execute();
             $stmt->close();
+
+            header("Location: congrat.php?pet_id=$petId");
         }
     ?>
     <div class="container">
